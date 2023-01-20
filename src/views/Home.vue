@@ -17,8 +17,8 @@
     </p>
     <h2 class="mb-3">
       Cosmos Ecosystem Blockchains 🚀
-      <br><a href="https://explorer.owlstake.com/">Mainnet Explorer</a></p>
-      <a href="https://testnet.explorer.owlstake.com/">Testnet Explorer</a>
+<br><a href="https://explorer.owlstake.com/">Mainnet Explorer</a></p>
+<a href="https://testnet.explorer.owlstake.com/">Testnet Explorer</a>
     </h2>
 
     <div>
