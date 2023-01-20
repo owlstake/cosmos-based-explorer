@@ -197,6 +197,15 @@
             :items="deleTable"
             stacked="sm"
           >
+            <template #cell(validator)="data">
+              <span>
+                <router-link
+                  :to="`../staking/${data.value.address}`"
+                >
+                  {{ data.value.moniker }}
+                </router-link>
+              </span>
+            </template>
             <template #cell(action)="data">
               <!-- size -->
               <b-button-group
@@ -424,14 +433,13 @@ import FeatherIcon from '@/@core/components/feather-icon/FeatherIcon.vue'
 import ToastificationContent from '@core/components/toastification/ToastificationContent.vue'
 import Ripple from 'vue-ripple-directive'
 import VueQr from 'vue-qr'
-import chainAPI from '@/libs/fetch'
 import {
   formatToken, formatTokenAmount, formatTokenDenom, getStakingValidatorOperator, percent, tokenFormatter, toDay,
   toDuration, abbrMessage, abbrAddress, getUserCurrency, getUserCurrencySign, numberWithCommas, toETHAddress,
 } from '@/libs/utils'
 import OperationModal from '@/views/components/OperationModal/index.vue'
-import ObjectFieldComponent from './ObjectFieldComponent.vue'
-import ChartComponentDoughnut from './ChartComponentDoughnut.vue'
+import ObjectFieldComponent from './components/ObjectFieldComponent.vue'
+import ChartComponentDoughnut from './components/charts/ChartComponentDoughnut.vue'
 
 export default {
   components: {
@@ -622,12 +630,17 @@ export default {
     },
     deleTable() {
       const re = []
+      const conf = this.$http.getSelectedConfig()
+      const decimal = conf.assets[0].exponent || '6'
       if (this.reward.rewards && this.delegations && this.delegations.length > 0) {
         this.delegations.forEach(e => {
           const reward = this.reward.rewards.find(r => r.validator_address === e.delegation.validator_address)
           re.push({
-            validator: getStakingValidatorOperator(this.$http.config.chain_name, e.delegation.validator_address, 8),
-            token: formatToken(e.balance, {}, 2),
+            validator: {
+              moniker: getStakingValidatorOperator(this.$http.config.chain_name, e.delegation.validator_address, 8),
+              address: e.delegation.validator_address,
+            },
+            token: formatToken(e.balance, {}, decimal),
             reward: tokenFormatter(reward.reward, this.denoms),
             action: e.delegation.validator_address,
           })
@@ -651,7 +664,7 @@ export default {
   },
   created() {
     this.$http.getAuthAccount(this.address).then(acc => {
-      this.account = acc
+      this.account = acc.account
       this.initial()
       this.$http.getTxsBySender(this.address).then(res => {
         this.transactions = res
@@ -673,14 +686,6 @@ export default {
     initial() {
       this.$http.getBankAccountBalance(this.address).then(bal => {
         this.assets = bal
-        bal.forEach(x => {
-          const symbol = formatTokenDenom(x.denom)
-          if (!this.quotes[symbol] && symbol.indexOf('/') === -1) {
-            chainAPI.fetchTokenQuote(symbol).then(quote => {
-              this.$set(this.quotes, symbol, quote)
-            })
-          }
-        })
       })
       this.$http.getStakingReward(this.address).then(res => {
         this.reward = res
