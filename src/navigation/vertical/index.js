@@ -26,13 +26,13 @@ function processMenu() {
   if (isTestnet()) {
     chainMenus.push({
       title: 'Mainnet Explorer',
-      href: 'https://ping.pub',
+      href: 'https://explorer.owlstake.com',
       icon: 'ChromeIcon',
     })
   } else {
     chainMenus.push({
       title: 'Testnet Explorer',
-      href: 'http://testnet.ping.pub',
+      href: 'http://testnet.explorer.owlstake.com',
       icon: 'LifeBuoyIcon',
     })
   }
@@ -42,13 +42,13 @@ function processMenu() {
     icon: 'TwitterIcon',
   })
   chainMenus.push({
-    title: 'FAQ',
-    href: 'https://github.com/ping-pub/explorer/discussions',
+    title: 'Github-PR',
+    href: 'https://github.com/owlstake/cosmos-based-explorer/pulls',
     icon: 'MessageSquareIcon',
   })
   chainMenus.push({
     title: 'Github',
-    href: 'https://github.com/ping-pub/explorer',
+    href: 'https://github.com/owlstake/cosmos-based-explorer',
     icon: 'GithubIcon',
   })
 
