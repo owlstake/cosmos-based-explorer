@@ -4,9 +4,9 @@
       Powered By
       <b-link
         class="ml-25 font-weight-bolder"
-        href="#"
+        href="https://owlstake.com"
         target="_blank"
-      >Ping.pub</b-link>
+      >Owlstake.com</b-link>
     </span>
 
     <router-link

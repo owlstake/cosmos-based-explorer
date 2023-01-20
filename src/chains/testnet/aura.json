@@ -1,7 +1,7 @@
 {
-    "chain_name": "Aura Network",
+    "chain_name": "Aura-Network",
     "coingecko": "",
-    "api": "https://lcd.euphoria.aura.network",
+    "api": "https://aura-api.xuanphuctech.com",
     "rpc": "https://rpc.euphoria.aura.network",
     "snapshot_provider": "",
     "sdk_version": "0.44.3",

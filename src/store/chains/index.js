@@ -79,12 +79,6 @@ export default {
     },
   },
   actions: {
-    async getQuotes(context) {
-      fetch('https://price.ping.pub/quotes').then(data => data.json()).then(data => {
-        context.commit('setQuotes', data)
-      })
-    },
-
     async getAllIBCDenoms(context, _this) {
       _this.$http.getAllIBCDenoms().then(x => {
         const denomsMap = {}

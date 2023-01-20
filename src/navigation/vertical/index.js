@@ -71,33 +71,32 @@ function processMenu() {
   chainMenus.push({ header: 'LINKS' })
   if (isTestnet()) {
     chainMenus.push({
-      title: 'Mainnet Explorer',
-      href: 'https://ping.pub',
+      title: 'Home Page',
+      href: 'https://explorer.owlstake.com',
       icon: 'ChromeIcon',
     })
   } else {
     chainMenus.push({
-      title: 'Testnet Explorer',
-      href: 'http://testnet.ping.pub',
+      title: 'Home Page',
+      href: 'https://testnet.owlstake.com',
       icon: 'LifeBuoyIcon',
     })
   }
   chainMenus.push({
-    title: 'Discord',
-    href: 'https://discord.gg/CmjYVSr6GW',
-    icon: 'EyeIcon',
-  })
-  chainMenus.push({
-    title: 'Twitter',
-    href: 'https://twitter.com/ping_pub',
-    icon: 'TwitterIcon',
-  })
-  chainMenus.push({
     title: 'Github',
-    href: 'https://github.com/ping-pub/explorer',
+    href: 'https://github.com/owlstake/cosmos-based-explorer',
     icon: 'GithubIcon',
   })
-
+  chainMenus.push({
+    title: 'Telegram Ann',
+    href: 'https://t.me/owlstakeann',
+    icon: 'bell',
+  })
+  chainMenus.push({
+    title: 'Telegram Chat',
+    href: 'https://t.me/owlstakechat',
+    icon: 'message-circle',
+  })
   return chainMenus
 }
 

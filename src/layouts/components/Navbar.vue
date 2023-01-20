@@ -52,7 +52,7 @@
             <span class="text-uppercase">{{ chainid || selected_chain.chain_name }}</span>
           </h6>
           <small id="data-provider">
-            {{ currentApi }} ({{ selected_chain.sdk_version || '-' }})
+           <!-- {{ currentApi }} ({{ selected_chain.sdk_version || '-' }})
             <b-dropdown
               class="ml-0"
               variant="flat-primary"
@@ -75,7 +75,7 @@
               >
                 {{ item }}
               </b-dropdown-item>
-            </b-dropdown>
+            </b-dropdown> -->
           </small>
         </b-media-body>
       </b-media>

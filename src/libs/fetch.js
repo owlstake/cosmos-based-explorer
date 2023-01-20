@@ -477,7 +477,7 @@ export default class ChainFetch {
   }
 
   static async fetchTokenQuote(symbol) {
-    return ChainFetch.fetchCoinMarketCap(`/quote/${symbol}`)
+    return new Promise(resolve => { resolve({ symbol }) })
   }
 
   // Simulate Execution of tx
