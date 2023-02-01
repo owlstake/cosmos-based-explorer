@@ -4,7 +4,7 @@
       Powered By
       <b-link
         class="ml-25 font-weight-bolder"
-        href="#"
+        href="https://owlstake.com"
         target="_blank"
       >owlstake.com</b-link>
     </span>
