@@ -1,7 +1,7 @@
 {
     "chain_name": "OG",
     "coingecko": "",
-    "api": ["https://ogapi.owlstake.com:443"],
+    "api": ["https://ogapi.owlstake.com"],
     "rpc": ["https://rpc-zero-gravity-testnet.trusted-point.com:443"],
     "snapshot_provider": "",
     "sdk_version": "0.45.1",
