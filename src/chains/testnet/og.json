@@ -1,0 +1,20 @@
+{
+    "chain_name": "OG",
+    "coingecko": "",
+    "api": ["https://api-zero-gravity-testnet.trusted-point.com:443"],
+    "rpc": ["https://rpc-zero-gravity-testnet.trusted-point.com:443"],
+    "snapshot_provider": "",
+    "sdk_version": "0.45.1",
+    "coin_type": "60",
+    "min_tx_fee": "3000000000000000",
+    "addr_prefix": "evmos",
+    "logo": "/logos/evmos.jpeg",
+    "keplr_features": ["ibc-transfer", "ibc-go", "eth-address-gen", "eth-key-sign"],
+    "assets": [{
+        "base": "aevmos",
+        "symbol": "TEVMOS",
+        "exponent": "18",
+        "coingecko_id": "", 
+        "logo": "/logos/evmos.jpeg"
+    }]
+}
