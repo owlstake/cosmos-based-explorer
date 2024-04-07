@@ -4,17 +4,17 @@
     "api": ["https://ogapi.owlstake.com"],
     "rpc": ["https://rpc-zero-gravity-testnet.trusted-point.com:443"],
     "snapshot_provider": "",
-    "sdk_version": "0.45.1",
+    "sdk_version": "0.47.5",
     "coin_type": "60",
     "min_tx_fee": "3000000000000000",
     "addr_prefix": "evmos",
-    "logo": "/logos/evmos.jpeg",
+    "logo": "/logos/0G-Logo.png",
     "keplr_features": ["ibc-transfer", "ibc-go", "eth-address-gen", "eth-key-sign"],
     "assets": [{
         "base": "aevmos",
-        "symbol": "TEVMOS",
+        "symbol": "OG",
         "exponent": "18",
         "coingecko_id": "", 
-        "logo": "/logos/evmos.jpeg"
+        "logo": "/logos/0G-Logo.png"
     }]
 }
