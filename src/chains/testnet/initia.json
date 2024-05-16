@@ -1,6 +1,6 @@
 {
-    "chain_name": "aura",
-    "coingecko": "aura-network",
+    "chain_name": "initia",
+    "coingecko": "initia-network",
     "api": ["https://initia-testnet-api.owlstake.com"],
     "rpc": ["https://initia-testnet-rpc.owlstake.com:443"],
     "snapshot_provider": "",
