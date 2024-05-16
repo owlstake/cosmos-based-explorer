@@ -1,0 +1,19 @@
+{
+    "chain_name": "airchain",
+    "coingecko": "airchain-network",
+    "api": ["https://airchain-testnet-api.owlstake.com"],
+    "rpc": ["https://airchain-testnet-rpc.owlstake.com:443"],
+    "snapshot_provider": "",
+    "sdk_version": "0.50.3",
+    "coin_type": "118",
+    "min_tx_fee": "2000",
+    "addr_prefix": "air",
+    "logo": "/logos/airchain.jpeg",
+    "assets": [{
+        "base": "amf",
+        "symbol": "AMF",
+        "exponent": "6",
+        "coingecko_id": "", 
+        "logo": "/logos/airchain.jpeg"
+    }]
+  }

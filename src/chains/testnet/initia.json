@@ -1,0 +1,19 @@
+{
+    "chain_name": "aura",
+    "coingecko": "aura-network",
+    "api": ["https://initia-testnet-api.owlstake.com"],
+    "rpc": ["https://initia-testnet-rpc.owlstake.com:443"],
+    "snapshot_provider": "",
+    "sdk_version": "0.45.6",
+    "coin_type": "118",
+    "min_tx_fee": "8000",
+    "addr_prefix": "init",
+    "logo": "/logos/initia.jpg",
+    "assets": [{
+        "base": "utuc",
+        "symbol": "TUC",
+        "exponent": "6",
+        "coingecko_id": "", 
+        "logo": "/logos/initia.jpg"
+    }]
+  }
