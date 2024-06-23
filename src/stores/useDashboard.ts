@@ -193,7 +193,6 @@ export function fromLocal(lc: LocalConfig): ChainConfig {
   return conf;
 }
 
-
 export function fromDirectory(source: DirectoryChain): ChainConfig {
   const conf = {} as ChainConfig;
   (conf.assets = source.assets),
