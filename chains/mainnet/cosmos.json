@@ -13,7 +13,7 @@
     "coin_type": "118",
     "min_tx_fee": "800",
     "addr_prefix": "cosmos",
-    "theme_color": "#ab0bdb",
+    "theme_color": "#9C6CFF",
     "logo": "/logos/cosmos.svg",
     "assets": [{
         "base": "uatom",

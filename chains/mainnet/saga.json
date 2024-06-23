@@ -1,0 +1,36 @@
+{
+    "chain_name": "main-saga",
+    "api": [
+        {
+          "address": "https://api.saga.nodestake.org",
+          "provider": "NodeStake"
+        },
+        {
+          "address": "https://saga-api.lavenderfive.com",
+          "provider": "Lavender.Five"
+        }
+      ],
+    "rpc": [
+        {
+          "address": "https://rpc.saga.nodestake.org",
+          "provider": "NodeStake"
+        },
+        {
+          "address": "https://saga-rpc.lavenderfive.com:443",
+          "provider": "Lavender.Five"
+        }
+      ],
+    "sdk_version": "0.47.0",
+    "coin_type": "118",
+    "min_tx_fee": "800",
+    "addr_prefix": "saga",
+    "theme_color": "#FF724F",
+    "logo": "/logos/saga.png",
+    "assets": [{
+        "base": "usaga",
+        "symbol": "SAGA",
+        "exponent": "6",
+        "coingecko_id": "saga-2",
+        "logo": "/logos/saga.png"
+    }]
+}

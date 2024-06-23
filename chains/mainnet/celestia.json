@@ -25,6 +25,7 @@
     "min_tx_fee": "800",
     "addr_prefix": "celestia",
     "logo": "/logos/celestia.png",
+    "theme_color": "#D554F8",
     "assets": [{
         "base": "utia",
         "symbol": "TIA",

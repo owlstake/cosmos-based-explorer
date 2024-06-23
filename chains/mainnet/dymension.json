@@ -40,6 +40,7 @@
     "coin_type": "60",
     "min_tx_fee": "20000000000",
     "addr_prefix": "dym",
+    "theme_color": "#E9C3A4",
     "logo": "https://ping.pub/logos/dymension.png",
     "assets": [{
         "base": "adym",

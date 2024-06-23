@@ -16,7 +16,7 @@
     "min_tx_fee": "8000",
     "addr_prefix": "shentu",
     "logo": "/logos/shentu.png",
-    "theme_color": "#ed6b07",
+    "theme_color": "#E1AA4C",
     "assets": [{
         "base": "uctk",
         "symbol": "CTK",
