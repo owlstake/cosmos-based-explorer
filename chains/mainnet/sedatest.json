@@ -1,0 +1,28 @@
+{
+    "chain_name": "test-seda",
+    "api": [
+        {"provider": "blacknodes", "address": "https://seda-testnet-api.blacknodes.net"},
+        {"provider": "whispernode", "address": "https://api-seda-testnet.whispernode.com"},
+        {"provider": "noders", "address": "https://seda-t-api.noders.services"}
+    ],
+    "rpc": [
+        {"provider": "blacknodes", "address": "https://seda-testnet-rpc.blacknodes.net:443"},
+        {"provider": "whispernode", "address": "https://rpc-seda-testnet.whispernode.com:443"},
+        {"provider": "noders", "address": "https://seda-t-rpc.noders.services:443"}
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.46.2",
+    "coin_type": "118",
+    "min_tx_fee": "5000000000000000",
+    "addr_prefix": "seda",
+    "logo": "/logos/seda.png",
+    "theme_color": "#690cc7",
+    "keplr_features": ["ibc-transfer", "ibc-go", "eth-address-gen", "eth-key-sign"],
+    "assets": [{
+        "base": "aseda",
+        "symbol": "seda",
+        "exponent": "18",
+        "coingecko_id": "seda-2",
+        "logo": "/logos/seda.png"
+    }]
+}

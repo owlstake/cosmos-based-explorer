@@ -1,0 +1,28 @@
+{
+    "chain_name": "test-mantra",
+    "coingecko": "mantra-dao",
+    "api": [
+        {"provider": "liveraven", "address": "https://testnet.mantra.api.liveraven.net"},
+        {"provider": "coinsspor", "address": "https://mantra-hongbai-testnet-api.coinsspor.com"},
+        {"provider": "nodestake", "address": "https://api-t.mantra.nodestake.org"}
+    ],
+    "rpc": [
+        {"provider": "liveraven", "address": "https://testnet.mantra.rpc.liveraven.net:443"},
+        {"provider": "coinsspor", "address": "https://mantra-hongbai-testnet-rpc.coinsspor.com:443"},
+        {"provider": "nodestake", "address": "https://rpc-t.mantra.nodestake.org:443"}
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.45.11",
+    "coin_type": "118",
+    "min_tx_fee": "8000",
+    "addr_prefix": "mantra",
+    "theme_color": "#f00a9f",
+    "logo": "/logos/mantra.png",
+    "assets": [{
+        "base": "uom",
+        "symbol": "om",
+        "exponent": "6",
+        "coingecko_id": "mantra-dao", 
+        "logo": "/logos/mantra.png"
+    }]
+}

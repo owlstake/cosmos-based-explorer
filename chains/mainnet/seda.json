@@ -1,0 +1,28 @@
+{
+    "chain_name": "main-seda",
+    "api": [
+        {"provider": "AppleJuice", "address": "https://seda-api.applejuice.256x25.tech"},
+        {"provider": "FiveTech", "address": "https://api.seda.fivetech.pro"},
+        {"provider": "luckyresearch", "address": "https://seda-api.luckyresearch.org"}
+    ],
+    "rpc": [
+        {"provider": "AppleJuice", "address": "https://seda-rpc.applejuice.256x25.tech:443"},
+        {"provider": "FiveTech", "address": "https://rpc.seda.fivetech.pro:443"},
+        {"provider": "luckyresearch", "address": "https://seda-rpc.luckyresearch.org:443"}
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.46.2",
+    "coin_type": "118",
+    "min_tx_fee": "5000000000000000",
+    "addr_prefix": "seda",
+    "logo": "/logos/seda.png",
+    "theme_color": "#690cc7",
+    "keplr_features": ["ibc-transfer", "ibc-go", "eth-address-gen", "eth-key-sign"],
+    "assets": [{
+        "base": "aseda",
+        "symbol": "seda",
+        "exponent": "18",
+        "coingecko_id": "seda-2",
+        "logo": "/logos/seda.png"
+    }]
+}

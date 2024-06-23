@@ -1,0 +1,28 @@
+{
+    "chain_name": "test-airchain",
+    "coingecko": "",
+    "api": [
+        {"provider": "logosnodos", "address": "https://airchains-testnet-api.logosnodos.me"},
+        {"provider": "bonynode", "address": "https://airchains-testnet-api.bonynode.online"},
+        {"provider": "ngsolutions", "address": "https://junction.api.ngsolutions.xyz/"}
+    ],
+    "rpc": [
+        {"provider": "logosnodos", "address": "https://airchains-testnet-rpc.logosnodos.me:443"},
+        {"provider": "bonynode", "address": "https://airchains-testnet-rpc.bonynode.online:443"},
+        {"provider": "ngsolutions", "address": "https://junction.rpc.ngsolutions.xyz:443"}
+    ],
+    "snapshot_provider": "",
+    "sdk_version": "0.45.11",
+    "coin_type": "118",
+    "min_tx_fee": "8000",
+    "addr_prefix": "air",
+    "theme_color": "#0735ed",
+    "logo": "/logos/airchain.jpg",
+    "assets": [{
+        "base": "amf",
+        "symbol": "AMF",
+        "exponent": "6",
+        "coingecko_id": "", 
+        "logo": "/logos/airchain.jpg"
+    }]
+}
